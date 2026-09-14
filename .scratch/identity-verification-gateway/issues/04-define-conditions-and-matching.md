@@ -1,5 +1,5 @@
 Type: grilling
-Status: open
+Status: claimed
 Blocked by:
 
 # Define Conditions and Matching Semantics
