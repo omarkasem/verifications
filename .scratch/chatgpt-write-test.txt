@@ -1,3 +1,0 @@
-ChatGPT GitHub write-access test
-Created: 2026-09-14T13:14:00+03:00
-Purpose: temporary create/read/delete verification
