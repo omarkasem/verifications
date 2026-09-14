@@ -21,9 +21,10 @@ A decision-complete V1 product and technical specification for a provider-agnost
 
 ## Decisions so far
 
+- [Choose the First Verification Provider](issues/01-choose-first-provider.md): V1 will use Didit first because it offers the best combination of merchant adoption friction, identity/age capability, hosted flow, and API fit, while forcing the provider contract to support reconciliation because webhook durability varies.
+
 ## Not yet specified
 
-- How the chosen provider's concrete limits reshape the provider-neutral contract and supported claims.
 - Whether claim freshness varies by policy, provider, order context, or buyer risk.
 - How rule edits affect orders already evaluated under an older rule version.
 - How privacy retention, export, erasure, and audit requirements interact.
