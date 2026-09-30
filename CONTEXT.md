@@ -52,6 +52,10 @@ _Avoid_: Check, verification step
 A maximum acceptable age for previously established evidence of a Verification Claim. It constrains reuse without extending any shorter provider-imposed validity or expiry.
 _Avoid_: Expiration, session timeout
 
+**Established Claim**:
+The normalized metadata showing that a Verification Claim was established, including when it was established, achieved Verification Assurance, provider validity or expiry when known, origin references, and whether it was provider-native or derived. It does not contain underlying identity evidence.
+_Avoid_: Identity evidence, verification document
+
 **Verification Outcome**:
 The merchant-selected order behavior for a passed, failed, pending, or expired verification.
 _Avoid_: Action, callback
