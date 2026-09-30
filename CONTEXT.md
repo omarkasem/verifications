@@ -59,3 +59,11 @@ _Avoid_: Verification status, order status
 **Session Handoff**:
 The provider-neutral information needed to send a buyer into a Verification Session, such as a hosted URL or client token.
 _Avoid_: Redirect URL
+
+**Provider Connection**:
+A merchant-configured relationship between the gateway and one Verification Provider, including the credentials and provider-specific configuration needed to use that provider.
+_Avoid_: Provider account, integration
+
+**Verification Session Intent**:
+The provider-neutral reason a Verification Session is being created or continued, such as a new verification, retry, continuation, reverification, or additional claims. A Provider Adapter translates that intent into provider-native behavior when supported.
+_Avoid_: Session type, action
