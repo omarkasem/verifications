@@ -1,5 +1,5 @@
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 02
 
 # Define Claims and Verification Policy Composition
