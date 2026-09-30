@@ -23,6 +23,8 @@ A decision-complete V1 product and technical specification for a provider-agnost
 
 - [Choose the First Verification Provider](issues/01-choose-first-provider.md): V1 will use Didit first because it offers the best combination of merchant adoption friction, identity/age capability, hosted flow, and API fit, while forcing the provider contract to support reconciliation because webhook durability varies.
 
+- [Define the Provider Capability Contract](issues/02-define-provider-capability-contract.md): Provider Adapters expose a typed extensible capability model and normalized session, observation, error, webhook, reconciliation, privacy, and recovery boundaries while preserving provider-specific semantics through declared extensions.
+
 ## Not yet specified
 
 - Whether claim freshness varies by policy, provider, order context, or buyer risk.
