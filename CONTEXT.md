@@ -37,8 +37,12 @@ The set of verification claims a buyer must satisfy.
 _Avoid_: Rule, verification level
 
 **Verification Claim**:
-A distinct fact established by a provider, such as identity or minimum age.
-_Avoid_: Check, verification type
+A provider-neutral fact the merchant requires to be established about a Buyer, such as identity or a configurable minimum age. A claim describes what must be true, not the verification method used to establish it.
+_Avoid_: Check, verification type, verification method
+
+**Verification Assurance**:
+A provider-neutral constraint on how strongly or by what acceptable class of method a Verification Claim must be established, without exposing one provider's workflow as the business requirement.
+_Avoid_: Claim, verification type, provider workflow
 
 **Verification Outcome**:
 The merchant-selected order behavior for a passed, failed, pending, or expired verification.
