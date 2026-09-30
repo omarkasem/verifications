@@ -33,8 +33,8 @@ A nested set of order conditions joined with `AND` or `OR` logic.
 _Avoid_: Filter, query
 
 **Verification Policy**:
-A reusable set of Claim Requirements that a Buyer must satisfy together.
-_Avoid_: Rule, verification level
+A reusable, declarative, unordered set of Claim Requirements that a Buyer must satisfy together. It describes required facts and assurance, not provider workflow order or session count.
+_Avoid_: Rule, verification level, workflow
 
 **Verification Claim**:
 A provider-neutral fact the merchant requires to be established about a Buyer, such as identity or a configurable minimum age. A claim describes what must be true, not the verification method used to establish it.
@@ -45,8 +45,12 @@ A provider-neutral constraint on how strongly or by what acceptable class of met
 _Avoid_: Claim, verification type, provider workflow
 
 **Claim Requirement**:
-A Verification Claim together with any Verification Assurance constraints that must be satisfied for that claim. Verification Policies are composed from Claim Requirements.
+A Verification Claim together with any Verification Assurance and freshness constraints that must be satisfied for that claim. Verification Policies are composed from Claim Requirements.
 _Avoid_: Check, verification step
+
+**Freshness Constraint**:
+A maximum acceptable age for previously established evidence of a Verification Claim. It constrains reuse without extending any shorter provider-imposed validity or expiry.
+_Avoid_: Expiration, session timeout
 
 **Verification Outcome**:
 The merchant-selected order behavior for a passed, failed, pending, or expired verification.
