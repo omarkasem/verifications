@@ -51,3 +51,11 @@ _Avoid_: Check, verification record
 **Provider Observation**:
 A normalized report of what a Verification Provider currently says about a Verification Session and its claims. It describes provider truth; it does not command gateway or WooCommerce behavior.
 _Avoid_: Provider event, callback action
+
+**Provider Disposition**:
+A coarse provider-neutral description of whether a Verification Session is still in progress or has reached a provider-side terminal result. It is not the gateway's Verification lifecycle state.
+_Avoid_: Verification status, order status
+
+**Session Handoff**:
+The provider-neutral information needed to send a buyer into a Verification Session, such as a hosted URL or client token.
+_Avoid_: Redirect URL
