@@ -16,6 +16,10 @@ _Avoid_: Customer, shopper
 An external service that performs identity checks and returns their results.
 _Avoid_: Vendor, identity service
 
+**Provider Adapter**:
+The gateway boundary that translates provider-neutral verification operations and results to and from one Verification Provider. It does not own merchant rules, WooCommerce behavior, verification reuse decisions, or audit decisions.
+_Avoid_: Provider integration, connector
+
 **Verification Rule**:
 A merchant-defined statement that connects a WooCommerce event and condition group to a verification policy and its outcomes.
 _Avoid_: Automation, trigger
