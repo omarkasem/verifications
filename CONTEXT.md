@@ -33,7 +33,7 @@ A nested set of order conditions joined with `AND` or `OR` logic.
 _Avoid_: Filter, query
 
 **Verification Policy**:
-The set of verification claims a buyer must satisfy.
+A reusable set of Claim Requirements that a Buyer must satisfy together.
 _Avoid_: Rule, verification level
 
 **Verification Claim**:
@@ -43,6 +43,10 @@ _Avoid_: Check, verification type, verification method
 **Verification Assurance**:
 A provider-neutral constraint on how strongly or by what acceptable class of method a Verification Claim must be established, without exposing one provider's workflow as the business requirement.
 _Avoid_: Claim, verification type, provider workflow
+
+**Claim Requirement**:
+A Verification Claim together with any Verification Assurance constraints that must be satisfied for that claim. Verification Policies are composed from Claim Requirements.
+_Avoid_: Check, verification step
 
 **Verification Outcome**:
 The merchant-selected order behavior for a passed, failed, pending, or expired verification.
