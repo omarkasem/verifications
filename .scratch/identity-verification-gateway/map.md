@@ -18,6 +18,7 @@ A decision-complete V1 product and technical specification for a provider-agnost
 - WordPress stores verification metadata and audit events, never identity documents, selfies, or biometric data.
 - Merchants choose from supported events and outcomes. Developers may extend them in code; merchants do not enter raw PHP hooks or callbacks.
 - Use the canonical language in `CONTEXT.md`.
+- Prefer a modest middle path: avoid overengineering and deep abstraction for its own sake, but do not take shortcuts that compromise correctness, safety, or the provider-agnostic boundary.
 
 ## Decisions so far
 
