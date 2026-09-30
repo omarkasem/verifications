@@ -43,3 +43,11 @@ _Avoid_: Check, verification type
 **Verification Outcome**:
 The merchant-selected order behavior for a passed, failed, pending, or expired verification.
 _Avoid_: Action, callback
+
+**Verification Session**:
+A provider-side attempt to establish one or more Verification Claims for a buyer, referenced by the gateway without storing sensitive identity evidence.
+_Avoid_: Check, verification record
+
+**Provider Observation**:
+A normalized report of what a Verification Provider currently says about a Verification Session and its claims. It describes provider truth; it does not command gateway or WooCommerce behavior.
+_Avoid_: Provider event, callback action
