@@ -25,9 +25,10 @@ A decision-complete V1 product and technical specification for a provider-agnost
 
 - [Define the Provider Capability Contract](issues/02-define-provider-capability-contract.md): Provider Adapters expose a typed extensible capability model and normalized session, observation, error, webhook, reconciliation, privacy, and recovery boundaries while preserving provider-specific semantics through declared extensions.
 
+- [Define Claims and Verification Policy Composition](issues/05-define-claims-and-policy-composition.md): V1 policies are provider-neutral unordered AND-sets of extensible Claim Requirements, with core identity and parameterized minimum-age claims, assurance constraints, deterministic composition, provider capability validation, and per-claim freshness.
+
 ## Not yet specified
 
-- Whether claim freshness varies by policy, provider, order context, or buyer risk.
 - How rule edits affect orders already evaluated under an older rule version.
 - How privacy retention, export, erasure, and audit requirements interact.
 - The exact compatibility approach for WooCommerce HPOS, Checkout Blocks, and classic checkout.
