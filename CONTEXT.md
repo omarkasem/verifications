@@ -12,6 +12,10 @@ _Avoid_: Customer, site owner, administrator
 The person whose WooCommerce order may require verification.
 _Avoid_: Customer, shopper
 
+**Verified Subject**:
+The merchant/site-scoped, provider-neutral identity anchor representing the human to whom Established Claims belong. A Verified Subject may exist for a logged-in or guest Buyer and is distinct from any WordPress user, WooCommerce order, Verification Session, or provider-native subject identifier. It contains no underlying identity evidence.
+_Avoid_: WordPress user, order identity, provider subject, verification record
+
 **Verification Provider**:
 An external service that performs identity checks and returns their results.
 _Avoid_: Vendor, identity service
