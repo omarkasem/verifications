@@ -1,5 +1,5 @@
 Type: grilling
-Status: open
+Status: claimed
 Blocked by:
 
 # Define the Verified Subject and Safe Reuse
