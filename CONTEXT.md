@@ -16,6 +16,10 @@ _Avoid_: Customer, shopper
 The merchant/site-scoped, provider-neutral identity anchor representing the human to whom Established Claims belong. A Verified Subject may exist for a logged-in or guest Buyer and is distinct from any WordPress user, WooCommerce order, Verification Session, or provider-native subject identifier. It contains no underlying identity evidence.
 _Avoid_: WordPress user, order identity, provider subject, verification record
 
+**Subject Binding**:
+A durable relationship between a Verified Subject and an external principal that can participate in establishing that a current Buyer is that same Verified Subject. A Subject Binding is stronger than an order association or a matching contact identifier and does not, by itself, imply that every later interaction has established continuity.
+_Avoid_: Order association, email match, phone match, generic link
+
 **Verification Provider**:
 An external service that performs identity checks and returns their results.
 _Avoid_: Vendor, identity service
