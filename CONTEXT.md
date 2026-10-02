@@ -20,6 +20,10 @@ _Avoid_: WordPress user, order identity, provider subject, verification record
 A durable relationship between a Verified Subject and an external principal that can participate in establishing that a current Buyer is that same Verified Subject. A Subject Binding is stronger than an order association or a matching contact identifier and does not, by itself, imply that every later interaction has established continuity.
 _Avoid_: Order association, email match, phone match, generic link
 
+**Subject Continuity**:
+A current determination that the Buyer in an interaction is the same human represented by an existing Verified Subject, established through an acceptable active use of a Subject Binding. Subject Continuity allows that subject's Established Claims to be considered for reuse but does not itself make any claim eligible.
+_Avoid_: Email match, same account data, claim validity, automatic reuse
+
 **Subject Conflict**:
 A state where evidence from a trusted verification journey indicates that an external principal already bound to one Verified Subject may instead be acting for a different human. Subject conflicts fail closed: existing bindings are not silently replaced, merged, or reused until the conflict is explicitly resolved.
 _Avoid_: Duplicate subject, automatic rebind, account mismatch
@@ -65,8 +69,12 @@ A maximum acceptable age for previously established evidence of a Verification C
 _Avoid_: Expiration, session timeout
 
 **Established Claim**:
-The normalized metadata showing that a Verification Claim was established for exactly one Verified Subject, including when it was established, achieved Verification Assurance, provider validity or expiry when known, origin references, and whether it was provider-native or derived. It does not contain underlying identity evidence.
+The normalized historical fact that a Verification Claim was established for exactly one Verified Subject, including when it was established, achieved Verification Assurance, provider validity or expiry when known, origin references, and whether it was provider-native or derived. Later expiry, revocation, or newer evidence may make it ineligible for reuse without changing the fact that it was established. It does not contain underlying identity evidence.
 _Avoid_: Identity evidence, verification document
+
+**Claim Eligibility**:
+Whether an Established Claim can satisfy a Claim Requirement at the time of evaluation, considering claim satisfaction semantics, required Verification Assurance, Freshness Constraint, and any known provider validity or expiry. Eligibility is evaluated per Claim Requirement.
+_Avoid_: Claim existence, subject continuity, verification history
 
 **Verification Outcome**:
 The merchant-selected order behavior for a passed, failed, pending, or expired verification.
