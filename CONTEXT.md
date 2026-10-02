@@ -20,6 +20,10 @@ _Avoid_: WordPress user, order identity, provider subject, verification record
 A durable relationship between a Verified Subject and an external principal that can participate in establishing that a current Buyer is that same Verified Subject. A Subject Binding is stronger than an order association or a matching contact identifier and does not, by itself, imply that every later interaction has established continuity.
 _Avoid_: Order association, email match, phone match, generic link
 
+**Subject Conflict**:
+A state where evidence from a trusted verification journey indicates that an external principal already bound to one Verified Subject may instead be acting for a different human. Subject conflicts fail closed: existing bindings are not silently replaced, merged, or reused until the conflict is explicitly resolved.
+_Avoid_: Duplicate subject, automatic rebind, account mismatch
+
 **Verification Provider**:
 An external service that performs identity checks and returns their results.
 _Avoid_: Vendor, identity service
@@ -61,7 +65,7 @@ A maximum acceptable age for previously established evidence of a Verification C
 _Avoid_: Expiration, session timeout
 
 **Established Claim**:
-The normalized metadata showing that a Verification Claim was established, including when it was established, achieved Verification Assurance, provider validity or expiry when known, origin references, and whether it was provider-native or derived. It does not contain underlying identity evidence.
+The normalized metadata showing that a Verification Claim was established for exactly one Verified Subject, including when it was established, achieved Verification Assurance, provider validity or expiry when known, origin references, and whether it was provider-native or derived. It does not contain underlying identity evidence.
 _Avoid_: Identity evidence, verification document
 
 **Verification Outcome**:
